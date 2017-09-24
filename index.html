@@ -3,10 +3,179 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="visually-hidden">Пинк - мобильное приложение</h1>
+      <nav class="main-nav  main-nav--nojs">
+        <a href="#" class="main-nav__logo">pink</a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="intro">
+      <header class="intro__header  visually-hidden">
+        <h2 class="intro__header-title">Скачать приложение</h2>
+      </header>
+      <div class="intro__wrapper">
+        <a class="intro__download" href="#">Скачать приложение</a>
+        <ul class="intro__icons">
+          <li class="intro__icon">
+            <a href="#">
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
+            </a>
+          </li>
+          <li class="intro__icon">
+            <a href="https://www.android.com/">
+              <img src="img/android-logo.svg" width="43" height="47" alt="Android">
+            </a>
+          </li>
+          <li class="intro__icon">
+            <a href="https://www.microsoft.com/ru-ru/default.aspx%D1%86">
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Microsoft">
+            </a>
+          </li>
+        </ul>
+        <p class="intro__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+    <section class="information">
+      <header class="information__header  visually-hidden">
+        <h2 class="information__header-title">Информация</h2>
+      </header>
+      <p class="information__slogan">Устали от серости мегаполиса?</p>
+      <p class="information__slogan">Нам есть, что вам предложить!</p>
+      <div class="information__wrapper">
+        <ul class="information__advantages">
+          <li class="information__advantage">
+            <h3 class="information__advantage-title">Поднимает настроение</h3>
+            <p class="information__advantage-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="information__advantage">
+            <h3 class="information__advantage-title">Меняет мир вокруг</h3>
+            <p class="information__advantage-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="information__advantage">
+            <h3 class="information__advantage-title">Заводит новых друзей</h3>
+            <p class="information__advantage-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img src="img/mobile-phone.png" width="157" height="320" alt="iPhone">
+      </div>
+    </section>
+    <section class="review">
+      <div class="review__wrapper  slider">
+        <h2 class="review__title  visually-hidden">Отзывы</h2>
+        <input class="slider__input" id="review-input-1" type="radio" name="review" checked>
+        <input class="slider__input" id="review-input-2" type="radio" name="review">
+        <input class="slider__input" id="review-input-3" type="radio" name="review">
+        <ul class="review__items">
+          <li class="review__item  slider__item">
+            <h3 class="review__author">Николай Петров</h3>
+            <p class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
+            комментариях к выложенной фотографии!&raquo;</p>
+          </li>
+          <li class="review__item  slider__item">
+            <h3 class="review__author">Петр Николаев</h3>
+            <p class="review__text">&laquo;Это приложение стало для меня открытием! Я уже не
+              представляю себя без него!&raquo;</p>
+          </li>
+          <li class="review__item  slider__item">
+            <h3 class="review__author">Агриппина Сидорова</h3>
+            <p class="review__text">&laquo;С этим приложением меня многое связывает.
+              Здесь вся моя жизнь!&raquo;</p>
+          </li>
+        </ul>
+        <div class="review__toggles  slider__toggles">
+          <label class="slider__toggle" for="review-input-1">1</label>
+          <label class="slider__toggle" for="review-input-2">2</label>
+          <label class="slider__toggle" for="review-input-3">3</label>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrapper  slider">
+        <h2 class="prices__title  visually-hidden">Тарифы</h2>
+        <input class="slider__input" id="price-input-1" type="radio" name="price">
+        <input class="slider__input" id="price-input-2" type="radio" name="price" checked>
+        <input class="slider__input" id="price-input-3" type="radio" name="price">
+        <ul class="prices__items">
+          <li class="prices__item  slider__item">
+            <div class="prices__price-wrapper">
+              <p class="prices__name">Стандарт</p>
+              <span class="prices__price">3,99 USD</span>
+              <div class="prices__flag  prices__flag--hit"></div>
+              <table class="prices__options">
+                <tr class="prices__row">
+                  <td class="prices__variant">Розовый фильтр</td>
+                  <td class="prices__choice">
+                    <img src="img/icon-yes.svg" width="27" height="27" alt="yes">
+                  </td>
+                </tr>
+                <tr class="prices__row">
+                  <td class="prices__variant">Смайлики</td>
+                  <td class="prices__choice">
+                    <img src="img/icon-yes.svg" width="27" height="27" alt="yes">
+                  </td>
+                </tr>
+                <tr class="prices__row">
+                  <td class="prices__variant">Комментарии</td>
+                  <td class="prices__choice">
+                    <img src="img/icon-no.svg" width="27" height="27" alt="no">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <div class="prices__toggles  slider__toggles">
+          <label class="slider__toggle" for="price-input-1">1</label>
+          <label class="slider__toggle" for="price-input-2">2</label>
+          <label class="slider__toggle" for="price-input-3">3</label>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title  visually-hidden">Контакты</h2>
+        <p class="contacts__have-questions">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <div class="contacts__info-wrapper">
+          <p class="contacts__info">
+            <span class="contacts__please">Звоните:</span>
+            <span class="contacts__description">
+              <a href="#">+7 (812) 555-66-66</a>
+            </span>
+          </p>
+          <p class="contacts__info">
+            <span class="contacts__please">Пишите:</span>
+            <span class="contacts__description">
+              <a href="#">mail@htmlacademy.ru</a>
+            </span>
+          </p>
+          <p class="contacts__info">
+            <span class="contacts__please">Приезжайте в гости:</span>
+            <span class="contacts__description">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <img src="img/map.png" width="320" height="645" alt="Карта">
+      </div>
+    </section>
   </body>
 </html>
