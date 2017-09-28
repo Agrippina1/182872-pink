@@ -9,7 +9,9 @@
     <header class="page-header">
       <h1 class="visually-hidden">Пинк - мобильное приложение</h1>
       <nav class="main-nav  main-nav--nojs">
-        <a href="index.html" class="main-nav__logo">pink</a>
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
@@ -37,79 +39,79 @@
         <fieldset class="form-field__item">
           <legend class="form-field__title  visually-hidden">Ваши имя, фамилия и отчество</legend>
           <div class="form-field__item-name">
-            <label class="form-field__label" for="surname-field">Фамилия:</label>
-            <input class="form-field__input" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию *" required>
+            <label class="form-field__label-name" for="surname-field">Фамилия:</label>
+            <input class="form-field__input-name" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию *" required>
           </div>
           <div class="form-field__item-name">
-            <label class="form-field__label" for="name-field">Имя:</label>
-            <input class="form-field__input" id="name-field" type="text" name="name" placeholder="Введите ваше имя *" required>
+            <label class="form-field__label-name" for="name-field">Имя:</label>
+            <input class="form-field__input-name" id="name-field" type="text" name="name" placeholder="Введите ваше имя *" required>
           </div>
           <div class="form-field__item-name">
-            <label class="form-field__label" for="patronymic-field">Отчество:</label>
-            <input class="form-field__input" id="patronymic-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            <label class="form-field__label-name" for="patronymic-field">Отчество:</label>
+            <input class="form-field__input-name" id="patronymic-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
         <fieldset class="form-field__item">
-          <legend class="form-field__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form-field__title">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
           <ul class="form-field__item-wrapper">
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="selfie-field" type="checkbox" name="selfie" checked>
-              <label class="form-field__label  form-field__label--checkbox" for="selfie-field">Сделал селфи с акулой</label>
+              <input class="form-field__input-checkbox" id="selfie-field" type="checkbox" name="selfie" checked>
+              <label class="form-field__label-checkbox" for="selfie-field">Сделал селфи с акулой</label>
             </li>
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="burned-field" type="checkbox" name="burned" checked>
-              <label class="form-field__label  form-field__label--checkbox" for="burned-field">Обгорел на пляже</label>
+              <input class="form-field__input-checkbox" id="burned-field" type="checkbox" name="burned" checked>
+              <label class="form-field__label-checkbox" for="burned-field">Обгорел на пляже</label>
             </li>
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="chuck-norris-field" type="checkbox" name="chuck-norris">
-              <label class="form-field__label  form-field__label--checkbox" for="chuck-norris-field">Видел Чака Норриса</label>
+              <input class="form-field__input-checkbox" id="chuck-norris-field" type="checkbox" name="chuck-norris">
+              <label class="form-field__label-checkbox" for="chuck-norris-field">Видел Чака Норриса</label>
             </li>
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="souvenirs-field" type="checkbox" name="souvenirs">
-              <label class="form-field__label  form-field__label--checkbox" for="souvenirs-field">Накупил сувениров</label>
+              <input class="form-field__input-checkbox" id="souvenirs-field" type="checkbox" name="souvenirs">
+              <label class="form-field__label-checkbox" for="souvenirs-field">Накупил сувениров</label>
             </li>
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="tower-field" type="checkbox" name="tower" checked>
-              <label class="form-field__label  form-field__label--checkbox" for="tower-field">Удержал башню</label>
+              <input class="form-field__input-checkbox" id="tower-field" type="checkbox" name="tower" checked>
+              <label class="form-field__label-checkbox" for="tower-field">Удержал башню</label>
             </li>
             <li class="form-field__item-achievement">
-              <input class="form-field__input  form-field__input--checkbox" id="hotel-field" type="checkbox" name="hotel">
-              <label class="form-field__label  form-field__label--checkbox" for="hotel-field">Разгромил отель</label>
+              <input class="form-field__input-checkbox" id="hotel-field" type="checkbox" name="hotel">
+              <label class="form-field__label-checkbox" for="hotel-field">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-field__item">
           <legend class="form-field__title  visually-hidden">Ваши контакты</legend>
           <div class="form-field__item-contact">
-            <label class="form-field__label  form-field__label--phone" for="tel-field">Номер телефона</label>
-            <input class="form-field__input  form-field__input--phone" id="tel-field" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+            <label class="form-field__label-phone" for="tel-field">Номер телефона</label>
+            <input class="form-field__input-phone" id="tel-field" type="tel" name="telephone" placeholder="Номер, пожалуйста">
           </div>
           <div class="form-field__item-contact">
-            <label class="form-field__label  form-field__label--email" for="email-field">Адрес почты</label>
-            <input class="form-field__input  form-field__input--email" id="email-field" type="email" name="email" placeholder="Введите почту *" required>
+            <label class="form-field__label-email" for="email-field">Адрес почты</label>
+            <input class="form-field__input-email" id="email-field" type="email" name="email" placeholder="Введите почту *" required>
           </div>
         </fieldset>
         <fieldset class="form-field__item">
           <legend class="form-field__title">С каким приложением путешествовали?</legend>
           <ul class="form-field__item-wrapper">
             <li class="form-field__item-app">
-              <input class="form-field__input  form-field__input--radio" id="ios-field" type="radio" name="button" checked>
-              <label class="form-field__label  form-field__label--radio" for="ios-field">Pink для iOS</label>
+              <input class="form-field__input-radio" id="ios-field" type="radio" name="button" checked>
+              <label class="form-field__label-radio" for="ios-field">Pink для iOS</label>
             </li>
             <li class="form-field__item-app">
-              <input class="form-field__input  form-field__input--radio" id="android-field" type="radio" name="button">
-              <label class="form-field__label  form-field__label--radio" for="android-field">Pink на Android</label>
+              <input class="form-field__input-radio" id="android-field" type="radio" name="button">
+              <label class="form-field__label-radio" for="android-field">Pink на Android</label>
             </li>
             <li class="form-field__item-app">
-              <input class="form-field__input  form-field__input--radio" id="windows-field" type="radio" name="button">
-              <label class="form-field__label  form-field__label--radio" for="windows-field">Windows Phone</label>
+              <input class="form-field__input-radio" id="windows-field" type="radio" name="button">
+              <label class="form-field__label-radio" for="windows-field">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-field__item">
           <legend class="form-field__title">Опишите свои эмоции</legend>
-          <label class="form-field__label  form-field__label--add" for="message-field"></label>
-          <textarea class="form-field__textarea  form-field__textarea--add" id="message-field" name="message" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <label class="form-field__label-add" for="message-field"></label>
+          <textarea class="form-field__textarea" id="message-field" name="message" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="form-field__footnote-btn">
           <button class="form-field__btn  btn" type="button">Отправить форму</button>
@@ -120,7 +122,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <p>pink</p>
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink">
         </a>
         <p class="page-footer__social">
           <span class="social-links">
