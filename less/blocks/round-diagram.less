@@ -1,0 +1,49 @@
+.round-diagram {
+  display: none;
+}
+
+@media @tablet-widths {
+  .round-diagram {
+    display: block;
+  }
+
+  .round-diagram__wrappeer {
+    width: 250px;
+    margin-left: 380px;
+  }
+
+  .round-diagram__title {
+    .paragraph();
+    .fonts-bold();
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 25px;
+  }
+
+  .round-diagram__text {
+    .paragraph();
+    .fonts-light();
+    font-size: 12px;
+    line-height: 24px;
+    color: #283645;
+    padding-bottom: 24px;
+  }
+
+  .round-diagram__link {
+    .paragraph();
+    .fonts-light();
+    font-size: 13px;
+    line-height: 24px;
+    color: #dd5d80;
+    text-decoration: underline;
+  }
+}
+
+@media @desktop-widths {
+  .round-diagram {
+    background: #f2f2f2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

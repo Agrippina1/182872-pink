@@ -1,25 +1,29 @@
 .information__slogan {
-  .fonts-regular();
+  .paragraph();
+  .fonts-light();
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   color: #283645;
   text-align: center;
-  margin-bottom: 38px;
+  padding-top: 27px;
+}
+
+.information__slogan-block {
+  margin-bottom: 30px;
 }
 
 .information__wrapper {
   background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center bottom -35px;
-  padding-top: 55px;
-  padding-bottom: 320px;
-  margin-top: 85px;
-  margin-bottom: 50px;
+  background-position: center bottom -42px;
+  padding-bottom: 291px;
+  margin-bottom: 41px;
 }
 
 .information__advantages {
   .list();
+  padding-top: 78px;
 }
 
 .information__advantage-title {
@@ -29,6 +33,7 @@
   line-height: 30px;
   color: #000000;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .information__advantage-text {
@@ -38,7 +43,69 @@
   line-height: 24px;
   color: #283645;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 45px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-bottom: 27px;
+}
+
+@media @tablet-widths {
+  .information__slogan {
+    font-size: 40px;
+    line-height: 40px;
+
+    &--center {
+      text-align: center;
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 0;
+    }
+  }
+
+  .information__advantages {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-left: 340px;
+  }
+
+  .information__advantage-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .information__advantage-text {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .information__wrapper {
+    background-position: left 20px top 70px;
+    padding-bottom: 7px;
+  }
+}
+
+@media @desktop-widths {
+  .information__wrapper {
+    background-image: none;
+    margin-bottom: 0;
+  }
+
+  .information__slogan {
+    font-size: 50px;
+    line-height: 50px;
+
+    &--center {
+      padding-left: 390px;
+      padding-right: 400px;
+    }
+  }
+
+  .information__advantages {
+    .container();
+    flex-direction: row;
+  }
+
+  .information__advantage {
+    padding-top: 310px;
+  }
 }
