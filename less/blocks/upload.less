@@ -1,6 +1,6 @@
 .upload__slogan {
   .paragraph();
-  .fonts-regular();
+  .fonts-light();
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -14,13 +14,12 @@
 }
 
 .upload__photo {
-  .container();
+  padding-left: 20px;
   padding-top: 20px;
   margin-bottom: 40px;
 }
 
 .upload__filters {
-  .container();
   display: flex;
   justify-content: space-around;
   margin-bottom: 35px;
@@ -41,7 +40,6 @@
 }
 
 .upload__button {
-  .container();
   .fonts-bold();
   outline: none;
   font-size: 18px;
@@ -57,5 +55,19 @@
   &--cancel {
     color: #dddfe0;
     border: 3px solid #dddfe0;
+  }
+}
+
+@media @tablet-widths {
+  .upload {
+    .container();
+  }
+
+  .upload__slogan {
+    font-size: 18px;
+  }
+
+  .upload__form {
+    display: flex;
   }
 }

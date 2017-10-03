@@ -2,6 +2,14 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+    padding: 0 130px;
+  }
 }
 
 .fonts-bold() {
@@ -10,6 +18,11 @@
 }
 
 .fonts-regular() {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.fonts-light() {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
 }

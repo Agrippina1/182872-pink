@@ -17,7 +17,7 @@
   display: block;
   padding-left: 20px;
   padding-top: 22px;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #000001;
 }
 
@@ -38,14 +38,51 @@
 }
 
 .main-nav__item a {
-  .fonts-bold();
   .links();
+  .fonts-bold();
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 25px;
-  padding-bottom: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
+}
+
+@media @tablet-widths {
+  .main-nav__logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav {
+    .container();
+    display: flex;
+    min-height: 110px;
+  }
+
+  .main-nav__logo {
+    padding-left: 80px;
+    margin-right: 140px;
+  }
+
+  .main-nav__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item a {
+    .fonts-regular();
+    line-height: 18px;
+    text-transform: none;
+    width: 150px;
+    border: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

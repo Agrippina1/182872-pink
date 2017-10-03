@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -35,8 +36,9 @@
       </div>
       <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз
       &mdash; 1000 миль на вашу бонусную карту!</p>
+      <p class="form__text-add">Пожалуйста, заполните форму ниже:</p>
       <form class="form-field" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form-field__item">
+        <fieldset class="form-field__item  form-field__item--border">
           <legend class="form-field__title  visually-hidden">Ваши имя, фамилия и отчество</legend>
           <div class="form-field__item-name">
             <label class="form-field__label-name" for="surname-field">Фамилия:</label>
@@ -51,9 +53,9 @@
             <input class="form-field__input-name" id="patronymic-field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
-        <fieldset class="form-field__item">
+        <fieldset class="form-field__item  form-field__item--achievement">
           <legend class="form-field__title">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
-          <ul class="form-field__item-wrapper">
+          <ul class="form-field__items  form-field__items--checkbox">
             <li class="form-field__item-achievement">
               <input class="form-field__input-checkbox" id="selfie-field" type="checkbox" name="selfie" checked>
               <label class="form-field__label-checkbox" for="selfie-field">Сделал селфи с акулой</label>
@@ -80,20 +82,22 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-field__item">
-          <legend class="form-field__title  visually-hidden">Ваши контакты</legend>
-          <div class="form-field__item-contact">
-            <label class="form-field__label-phone" for="tel-field">Номер телефона</label>
-            <input class="form-field__input-phone" id="tel-field" type="tel" name="telephone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="form-field__item-contact">
-            <label class="form-field__label-email" for="email-field">Адрес почты</label>
-            <input class="form-field__input-email" id="email-field" type="email" name="email" placeholder="Введите почту *" required>
+        <fieldset class="form-field__item  form-field__item--contact">
+          <legend class="form-field__title  form-field__title--contact">Контактная информация</legend>
+          <div class="form-field__item-contact-wrap">
+            <div class="form-field__item-contact">
+              <label class="form-field__label-phone" for="tel-field">Номер телефона</label>
+              <input class="form-field__input-phone" id="tel-field" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form-field__item-contact">
+              <label class="form-field__label-email" for="email-field">Адрес почты</label>
+              <input class="form-field__input-email" id="email-field" type="email" name="email" placeholder="Введите почту *" required>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="form-field__item">
+        <fieldset class="form-field__item  form-field__item--app">
           <legend class="form-field__title">С каким приложением путешествовали?</legend>
-          <ul class="form-field__item-wrapper">
+          <ul class="form-field__items">
             <li class="form-field__item-app">
               <input class="form-field__input-radio" id="ios-field" type="radio" name="button" checked>
               <label class="form-field__label-radio" for="ios-field">Pink для iOS</label>
@@ -108,12 +112,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-field__item">
+        <fieldset class="form-field__item  form-field__item--add">
           <legend class="form-field__title">Опишите свои эмоции</legend>
           <label class="form-field__label-add" for="message-field"></label>
           <textarea class="form-field__textarea" id="message-field" name="message" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <div class="form-field__footnote-btn">
+        <div class="form-field__footnote-btn  form-field__item--btn">
           <button class="form-field__btn  btn" type="button">Отправить форму</button>
           <p class="form-field__footnote"><sup>*</sup>&mdash; Обязательные поля</p>
         </div>
