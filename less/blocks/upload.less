@@ -1,28 +1,31 @@
 .upload__slogan {
   .paragraph();
-  .fonts-light();
+  .fonts-regular();
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
-  padding: 50px 20px 50px 20px;
+  padding: 23px 20px 42px 16px;
 }
 
 .upload__form {
   background: #f2f2f2;
+  padding-bottom: 29px;
   margin-bottom: 40px;
 }
 
 .upload__photo {
   padding-left: 20px;
   padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .upload__filters {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 35px;
+  padding-left: 37px;
+  padding-right: 37px;
+  margin-bottom: 88px;
 }
 
 .upload__filter {
@@ -34,6 +37,36 @@
   background: red;
 }
 
+.upload__range {
+  display: none;
+  position: relative;
+  height: 20px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.upload__scale {
+  position: absolute;
+  width: 241px;
+  height: 2px;
+  top: 33px;
+  left: -16px;
+  background: #283645;
+}
+
+.upload__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  top: -6px;
+  right: 33px;
+}
+
 .upload__buttons {
   display: flex;
   flex-direction: column;
@@ -41,6 +74,7 @@
 
 .upload__button {
   .fonts-bold();
+  width: 280px;
   outline: none;
   font-size: 18px;
   line-height: 18px;
@@ -48,9 +82,10 @@
   border: 3px solid #d22856;
   border-radius: 100px;
   background: #f2f2f2;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  margin-left: 18px;
 
   &--cancel {
     color: #dddfe0;
