@@ -37,15 +37,14 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-left: 57px;
+  padding-right: 52px;
 }
 
 .intro__icon-link {
   display: block;
   width: 50px;
   height: 62px;
-  background: #ffffff;
 }
 
 .intro__available {
@@ -55,7 +54,7 @@
   line-height: 24px;
   color: #ffffff;
   text-align: center;
-  padding: 17px 30px 30px 30px;
+  padding: 1px 30px 30px 30px;
 }
 
 @media @tablet-widths {
@@ -70,16 +69,56 @@
     .paragraph();
     .fonts-light();
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     color: #ffffff;
     text-align: center;
-    text-transform: uppercase;
-    padding-left: 75px;
-    margin-top: -325px;
+    padding-left: 54px;
+    padding-right: 34px;
+    margin-bottom: 31px;
   }
 
   .intro__wrapper {
-    width: 300px;
-    // background: transparent;
+    width: 320px;
+    background: transparent;
+    margin-top: -299px;
+  }
+
+  .intro__download {
+    width: 294px;
+    margin: 0;
+    margin-bottom: 44px;
+    margin-left: 20px;
+  }
+
+  .intro__icons {
+    padding-left: 66px;
+    padding-right:43px;
+  }
+
+  .intro__available {
+    font-size: 18px;
+    padding: 15px 0 30px 20px;
+  }
+}
+
+@media @desktop-widths {
+  .intro__wrapper-header {
+    font-size: 50px;
+    line-height: 61px;
+    margin-top: -284px;
+    margin-bottom: 48px;
+  }
+
+  .intro__wrapper {
+    margin-top: 2px;
+    margin-left: 180px;
+  }
+
+  .intro__download {
+    margin-bottom: 62px;
+  }
+
+  .intro__icons {
+    margin-bottom: 22px;
   }
 }

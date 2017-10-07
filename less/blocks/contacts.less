@@ -41,23 +41,58 @@
 
 @media @tablet-widths {
   .contacts__have-questions {
-    font-size: 24px;
-    list-style-image: 40px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 45px;
   }
 
   .contacts__info-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .contacts__info {
     width: 300px;
   }
+
+  .contacts__please {
+    padding-bottom: 7px;
+  }
+
+  .contacts__info--email {
+    order: 0;
+    margin-bottom: 48px;
+  }
+
+  .contacts {
+    margin-bottom: -12px;
+  }
 }
 
-@media @tablet-widths {
+@media @desktop-widths {
+  .contacts {
+    margin-bottom: 140px;
+  }
+
   .contacts__info--email {
     order: 2;
+  }
+
+  .contacts__have-questions {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 12px;
+  }
+
+  .contacts__info-wrapper {
+    padding-left: 193px;
+    padding-right: 193px;
+  }
+
+  .contacts__please {
+    padding-bottom: 26px;
   }
 }

@@ -45,30 +45,48 @@
     display: block;
     .paragraph();
     .fonts-light();
-    font-size: 13px;
+    font-size: 14.5px;
     line-height: 18px;
     color: #283645;
     text-align: center;
   }
 
+  .review__author {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 7px;
+  }
+
   .review__text {
     font-size: 18px;
+    margin-bottom: 34px;
   }
 }
 
 @media @desktop-widths {
+  .review {
+    margin-bottom: 118px;
+  }
   .review__wrapper {
     .container();
   }
 
   .review__items {
-    padding-top: 190px;
+    padding-top: 61px;
   }
 
   .review__text {
-    padding-left: 130px;
-    padding-right: 140px;
-    margin-bottom: 45px;
+    padding-left: 111px;
+    padding-right: 120px;
+    margin-bottom: 35px;
+  }
+
+  .review__author {
+    font-size: 24px;
+  }
+
+  .review__author-data {
+    font-size: 19px;
   }
 
   .review__toggles {

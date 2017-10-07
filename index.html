@@ -9,25 +9,29 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Пинк - мобильное приложение</h1>
-      <nav class="main-nav  main-nav--nojs">
-        <a href="#" class="main-nav__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
-        </a>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--logo  main-nav__item--active">
+              <a href="#" class="main-nav__logo">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--academy">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="intro">
@@ -39,13 +43,19 @@
         <a class="intro__download" href="#">Скачать приложение</a>
         <ul class="intro__icons">
           <li class="intro__icon">
-            <a class="intro__icon-link" href="#"></a>
+            <a class="intro__icon-link" href="#">
+              <img src="img/logo-apple.svg" width="47" height="56" alt="Apple">
+            </a>
           </li>
           <li class="intro__icon">
-            <a class="intro__icon-link" href="https://www.android.com/"></a>
+            <a class="intro__icon-link" href="https://www.android.com/">
+              <img src="img/logo-android.svg" width="43" height="47" alt="Android">
+            </a>
           </li>
           <li class="intro__icon">
-            <a class="intro__icon-link" href="https://www.microsoft.com/ru-ru/default.aspx%D1%86"></a>
+            <a class="intro__icon-link" href="https://www.microsoft.com/ru-ru/default.aspx%D1%86">
+              <img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
+            </a>
           </li>
         </ul>
         <p class="intro__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -67,10 +77,10 @@
           </li>
           <li class="information__advantage">
             <h3 class="information__advantage-title">Меняет мир вокруг</h3>
-            <p class="information__advantage-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="information__advantage-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="information__advantage">
-            <h3 class="information__advantage-title">Заводит новых друзей</h3>
+            <h3 class="information__advantage-title">Заводит новых&nbsp;друзей</h3>
             <p class="information__advantage-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -78,9 +88,9 @@
     </section>
     <section class="round-diagram">
       <div class="round-diagram__wrappeer">
-        <h2 class="round-diagram__title">Эффект на 24 часа!</h2>
-        <p class="round-diagram__text">Британские ученые провели исследования и доказали,что положительный
-        эффект от использования приложения длится целые сутки!</p>
+        <h2 class="round-diagram__title">Эффект на&nbsp;24&nbsp;часа!</h2>
+        <p class="round-diagram__text">Британские ученые провели исследования и доказали, что&nbsp;положительный
+        эффект от&nbsp;использования&nbsp;приложения длится целые сутки!</p>
         <a class="round-diagram__link">Узнать больше об исследовании</a>
       </div>
     </section>
@@ -207,5 +217,23 @@
         </a>
       </div>
     </footer>
+
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+
   </body>
 </html>

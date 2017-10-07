@@ -9,36 +9,40 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Пинк - мобильное приложение</h1>
-      <nav class="main-nav  main-nav--nojs">
-        <a href="index.html" class="main-nav__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
-        </a>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--active">
-            <a>Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--logo  main-nav__item--active">
+              <a href="index.html" class="main-nav__logo">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--academy">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="photo">
       <h2 class="photo__title">Фотографии пользователей</h2>
       <p class="photo__inscription">Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?</p>
-      <a class="photo__photo-of-day" href="#">
-        <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-      </a>
       <p class="photo__panorama-of-day" href="#">Панорама дня</p>
-      <div class="photo__post">
+      <a class="photo__photo-of-day" href="#">
+        <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+      </a>
+      <div class="photo__post  photo__post--width">
         <div class="photo__post-wrapper">
           <b class="photo__autor">Анна</b>
           <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(5 минут назад)</time>
@@ -91,7 +95,7 @@
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Борис</b>
-            <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(5 минут назад)</time>
+            <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(20 часов назад)</time>
             <p class="photo__discription">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
@@ -164,7 +168,7 @@
               <button class="upload__filter  upload__filter--active"></button>
               <div class="upload__range  upload__range--active">
                 <div class="upload__scale">
-                  <div class="upload__slider"></div>
+                  <div class="upload__toggle"></div>
                 </div>
               </div>
             </div>
@@ -172,7 +176,7 @@
               <button class="upload__filter"></button>
               <div class="upload__range">
                 <div class="upload__scale">
-                  <div class="upload__slider"></div>
+                  <div class="upload__toggle"></div>
                 </div>
               </div>
             </div>
@@ -180,7 +184,7 @@
               <button class="upload__filter"></button>
               <div class="upload__range">
                 <div class="upload__scale">
-                  <div class="upload__slider"></div>
+                  <div class="upload__toggle"></div>
                 </div>
               </div>
             </div>
@@ -204,7 +208,7 @@
             <a class="social-link  social-link--youtube" href="https://www.youtube.com/htmlacadem">Мы в Ютубе</a>
           </span>
         </p>
-        <a class="page-footer__copyright"  href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span>Разработано</span>
         </a>
       </div>
