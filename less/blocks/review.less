@@ -36,9 +36,14 @@
 }
 
 @media @tablet-widths {
+  .review {
+    margin-bottom: 19px;
+  }
+
   .review__item {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 36px;
   }
 
   .review__author-data {
@@ -54,7 +59,7 @@
   .review__author {
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
 
   .review__text {
@@ -65,29 +70,34 @@
 
 @media @desktop-widths {
   .review {
-    margin-bottom: 118px;
-  }
-
-  .review__wrapper {
     .container();
+    background-image: url("../img/icon-quotes.svg"),
+      url("../img/icon-review-arrow-left.svg"),
+      url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center top, left 129px top 140px, right 131px top 140px;
+    padding-top: 50px;
+    margin: 0 auto;
   }
 
   .review__items {
-    padding-top: 61px;
+    padding-top: 111px;
   }
 
   .review__text {
-    padding-left: 111px;
-    padding-right: 120px;
+    padding-left: 21px;
+    padding-right: 178px;
     margin-bottom: 35px;
   }
 
   .review__author {
     font-size: 24px;
+    margin-left: -148px;
   }
 
   .review__author-data {
     font-size: 19px;
+    margin-left: -264px;
   }
 
   .review__toggles {

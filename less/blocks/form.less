@@ -9,11 +9,10 @@
   line-height: 29px;
   color: #ffffff;
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg") center top -65px;
   height: 145px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 29px;
+  margin-top: -141px;
 
   &--contact {
     display: none;
@@ -138,7 +137,7 @@
   height: 19px;
   top: 5px;
   left: 9px;
-  background: url("../img/icon-yes.svg");
+  background: url("../img/icon-yes-form.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -207,10 +206,11 @@
   border: 2px solid #e5e5e5;
   padding-left: 18px;
   padding-top: 14px;
+  padding-bottom: 33px;
 }
 
 .form-field__item--add {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .form-field__footnote-btn {
@@ -239,9 +239,9 @@ sup {
   .form__title {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 70px;
     padding-bottom: 80px;
-    margin-bottom: 85px;
+    margin-bottom: 86px;
+    margin-top: -261px;
   }
 
   .form__text {
@@ -438,10 +438,59 @@ sup {
 }
 
 @media @desktop-widths {
+  .form {
+    .container();
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .form__title {
+    padding-left: 84px;
+    padding-right: 86px;
+    padding-top: 40px;
+    margin-bottom: 47px;
+  }
+
+  .form__text {
+    padding-left: 83px;
+    padding-right: 85px;
+    margin-bottom: 71px;
+  }
+
+  .form__text-add {
+    display: inline;
+  }
+
   .form-field {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-field__item--border {
+    margin-top: 14px;
+    margin-right: 70px;
+  }
+
+  .form-field__item-name {
+    width: 434px;
+  }
+
+  .form-field__item--app {
+    width: 430px;
+  }
+
+  .form-field__input-radio + .form-field__label-radio {
+    padding-left: 133px;
+  }
+
+  .form-field__input-radio + .form-field__label-radio::before {
+    left: 74px;
+  }
+
+  .form-field__input-radio:checked + .form-field__label-radio::after {
+    left: 86px;
   }
 
   .form-field__item--contact,
@@ -450,32 +499,116 @@ sup {
     width: 100%;
   }
 
+  .form-field__title {
+    padding-left: 23px;
+  }
+
   .form-field__item-contact-wrap {
     display: flex;
-    justify-content: space-around;
   }
 
   .form-field__item-contact {
     display: flex;
     flex-direction: column-reverse;
+    padding-left: 0;
+    margin-left: 57px;
+    margin-right: 74px;
+    margin-bottom: 8px;
+  }
+
+  .form-field__input-phone,
+  .form-field__input-email {
+    width: 290px;
   }
 
   .form-field__title--contact {
     display: block;
+    margin-bottom: 34px;
+  }
+
+  .form-field__label-phone::before {
+    top: 50px;
+    left: 370px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-field__label-email::before {
+    top: 51px;
+    right: 60px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .form-field__items--checkbox {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 7px;
   }
 
-  .form-field__item-achievemen {
-    width: 285px;
+  .form-field__item-achievement {
+    width: 312px;
+  }
+  .form-field__item-achievement--burn {
+    order: 4;
+  }
+
+  .form-field__item-achievement--chuck {
+    order: 2;
+  }
+
+  .form-field__item-achievement--souvenir {
+    order: 5;
+  }
+
+  .form-field__item-achievement--tower {
+    order: 3;
+  }
+
+  .form-field__item-achievement--hotel {
+    order: 5;
+  }
+
+  .form-field__input-checkbox + .form-field__label-checkbox--tower,
+  .form-field__input-checkbox + .form-field__label-checkbox--hotel {
+    padding-left: 102px;
+  }
+
+  .form-field__input-checkbox + .form-field__label-checkbox--tower::before,
+  .form-field__input-checkbox + .form-field__label-checkbox--hotel::before {
+    left: 43px;
+  }
+
+  .form-field__input-checkbox:checked + .form-field__label-checkbox--tower::after,
+  .form-field__input-checkbox:checked + .form-field__label-checkbox--hotel::after {
+    left: 50px;
+  }
+
+  .form-field__item-achievement {
+    margin-bottom: 28px;
+  }
+
+  .form-field__title--add {
+    margin-bottom: 34px;
+  }
+
+  .form-field__textarea {
+    width: 795px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 39px;
+  }
+
+  .form-field__item--add {
+    margin-bottom: 65px;
   }
 
   .form-field__footnote-btn {
     display: flex;
     justify-content: space-between;
+    padding-right: 0;
   }
 
   .form-field__btn {
