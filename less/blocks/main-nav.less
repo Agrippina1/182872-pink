@@ -1,9 +1,10 @@
 .main-nav {
   position: relative;
+  top: -261px;
   min-width: 320px;
   min-height: 70px;
-  background: rgba(0, 0, 0, 0.3);
-  margin-top: 325px;
+  background: #283645;
+  margin-top: 255px;
 }
 
 .main-nav__items {
@@ -39,117 +40,131 @@
   border-bottom: 1px solid #000001;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 2;
-  display: block;
-  width: 50px;
-  height: 30px;
-  font-size: 0;
-  text-align: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: transparent;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 1px;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff,
-    0 20px 0 0 #ffffff;
-}
-
-.main-nav--opend .main-nav__toggle {
-  top: 0;
-  right: 0;
-  left: auto;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 5px;
-    width: 30px;
-    height: 4px;
-    background-color: red;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-@media @mobile-widths-only {
-  .main-nav--closed .main-nav__item {
-    display: none;
-
-    &--active {
-      display: block;
-    }
-  }
-
-  .main-nav__item .main-nav__logo {
-    padding-top: 42px;
-    padding-bottom: 34px;
-  }
-
-  .main-nav--opend .main-nav__wrapper {
-    position: absolute;
-    top: -325px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 93vh;
-    background: #283645;
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    height: auto;
-  }
-
-  .main-nav--nojs .main-nav__item {
-    display: block;
-  }
+// .main-nav__toggle {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   z-index: 2;
+//   display: block;
+//   width: 50px;
+//   height: 30px;
+//   font-size: 0;
+//   text-align: center;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   background: transparent;
+// }
+//
+// .main-nav--closed .main-nav__toggle::before {
+//   content: "";
+//   position: absolute;
+//   top: 1px;
+//   right: 1px;
+//   width: 50px;
+//   height: 4px;
+//   background-color: #ffffff;
+//   box-shadow: 0 10px 0 0 #ffffff,
+//     0 20px 0 0 #ffffff;
+// }
+//
+// .main-nav--opend .main-nav__toggle {
+//   top: -308px;
+//   right: 0;
+//   left: auto;
+//
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 20px;
+//     left: 5px;
+//     width: 30px;
+//     height: 4px;
+//     background-color: #ffffff;
+//   }
+//
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+//
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }
+//
+// @media @mobile-widths-only {
+//   .main-nav--closed .main-nav__item {
+//     display: none;
+//
+//     &--active {
+//       display: block;
+//     }
+//   }
+//
+//   // .main-nav--closed .main-nav__item--active {
+//   //   position: relative;
+//   //   top: 233px;
+//   //   padding-top: 21px;
+//   //   padding-bottom: 12px;
+//   //   // background: rgba(0, 0, 0, 0.3);
+//   //   // border-bottom: none;
+//   // }
+//
+//   .main-nav--opend .main-nav__wrapper {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 10;
+//     height: 93vh;
+//     background: #283645;
+//   }
+//
+//
+//   .main-nav--nojs .main-nav__wrapper {
+//     position: static;
+//     height: auto;
+//   }
+//
+//   .main-nav--nojs .main-nav__item {
+//     display: block;
+//   }
+// }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 @media @tablet-widths {
-  .main-nav__logo {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .main-nav__item .main-nav__logo {
+    padding-top: 26px;
+    padding-bottom: 33px;
   }
 }
 
 @media @desktop-widths {
   .main-nav {
-    .container();
+    position: static;
     display: flex;
+    background: rgba(0, 0, 0, 0.3);
     min-height: 110px;
+    margin-top: 0;
+  }
+
+  .main-nav__wrapper {
+    .container();
+    margin: 0;
   }
 
   .main-nav__item .main-nav__logo {
     border-bottom: none;
-    padding-left: 71px;
-    padding-top: 44px;
-    margin-right: 58px;
+    padding-left: 0;
+    padding-top: 27px;
+  }
+
+  .main-nav__item--logo {
+    margin-right: 128px;
   }
 
   .main-nav__items {

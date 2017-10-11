@@ -4,13 +4,32 @@
 
 @media @tablet-widths {
   .round-diagram {
-    display: block;
-    margin-bottom: 124px;
+    display: flex;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left 19px top 16px;
+    background-size: 242px;
+    margin-bottom: 74px;
+  }
+
+  .round-diagram__timer {
+    width: 176px;
+    height: 176px;
+    .fonts-bold();
+    font-size: 96px;
+    line-height: 165px;
+    color: #d22856;
+    text-align: center;
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    margin-top: 74px;
+    margin-left: 39px;
+    margin-right: 88px;
   }
 
   .round-diagram__wrappeer {
     width: 305px;
-    margin-left: 328px;
+    padding-bottom: 50px;
   }
 
   .round-diagram__title {
@@ -45,14 +64,28 @@
 
 @media @desktop-widths {
   .round-diagram {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left 129px top 22px;
+    background-size: 301px;
     padding-top: 100px;
-    padding-bottom: 113px;
+    padding-bottom: 62px;
+  }
+
+  .round-diagram__timer {
+    margin: 0;
+    width: 223px;
+    height: 223px;
+    font-size: 120px;
+    line-height: 209px;
+    margin-left: 154px;
+    margin-top: -6px;
   }
 
   .round-diagram__wrappeer {
     width: 550px;
-    margin-left: 569px;
+    margin-left: 92px;
   }
 
   .round-diagram__title {
