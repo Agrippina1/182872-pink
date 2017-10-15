@@ -15,7 +15,11 @@
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--logo  main-nav__item--active">
               <a href="index.html" class="main-nav__logo">
-                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img src="img/logo-pink-white-mobile.svg" alt="pink">
+                </picture>
               </a>
             </li>
             <li class="main-nav__item">
@@ -40,17 +44,21 @@
       Видите, как не хватает ваших?</p>
       <p class="photo__panorama-of-day">Панорама дня</p>
       <a class="photo__photo-of-day" href="#">
-        <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="photo__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile2x.jpg 2x" alt="Панорама дня">
+        </picture>
       </a>
       <div class="photo__post  photo__post--width">
-        <div class="photo__post-wrapper">
+        <div class="photo__post-wrapper  photo__post-wrapper--panorama">
           <b class="photo__autor">Анна</b>
           <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(5 минут назад)</time>
           <p class="photo__discription  photo__discription--panorama">Прыгать или нет? Напишите в комментарии свой
           совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photo__post-like  photo__post-like--panorama">
-            <a class="photo__like" href="#">
-              <span class="photo__like-link">Нравится:</span>
+            <a class="photo__like  photo__like--panorama" href="#">
+              <span class="photo__like-link  photo__like-link-panorama">Нравится:</span>
               <span class="photo__like-count">215</span>
             </a>
           </div>
@@ -59,12 +67,16 @@
       <div class="photo__wrapper">
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-car-mobile@1x.jpg" srcset="img/panorama-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Левон</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(5 часов назад)</time>
-            <p class="photo__discription">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo__discription  photo__discription--height">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -75,12 +87,16 @@
         </div>
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Антон</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(12 часов назад)</time>
-            <p class="photo__discription">Соседи будут рады!</p>
+            <p class="photo__discription  photo__discription--height">Соседи будут рады!</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -91,12 +107,16 @@
         </div>
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Борис</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(20 часов назад)</time>
-            <p class="photo__discription">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo__discription  photo__discription--height">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -107,12 +127,16 @@
         </div>
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Сергей</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(25 часов назад)</time>
-            <p class="photo__discription">Самая кубанская в мире!</p>
+            <p class="photo__discription  photo__discription--height">Самая кубанская в мире!</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -123,12 +147,16 @@
         </div>
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Максим</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(40 часов назад)</time>
-            <p class="photo__discription">Где снег-то?</p>
+            <p class="photo__discription  photo__discription--height">Где снег-то?</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -139,12 +167,16 @@
         </div>
         <div class="photo__post">
           <a href="#">
-            <img class="photo__photo-post" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo__photo-post" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile2x.jpg 2x" alt="Фото">
+            </picture>
           </a>
           <div class="photo__post-wrapper">
             <b class="photo__autor">Надежда</b>
             <time class="photo__date" datetime="2017-09-23T11:34:17+03:00">(45 часов назад)</time>
-            <p class="photo__discription">Всем GM и взаимные лайки</p>
+            <p class="photo__discription  photo__discription--height">Всем GM и взаимные лайки</p>
             <div class="photo__post-like">
               <a class="photo__like" href="#">
                 <span class="photo__like-link">Нравится:</span>
@@ -160,31 +192,35 @@
       <p class="upload__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <form class="upload__form"  action="https://echo.htmlacademy.ru" method="get">
         <div class="upload__photo">
-          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photo__photo-post" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile2x.jpg 2x" alt="Фото">
+          </picture>
         </div>
         <div class="upload__filters-wrapper">
           <div class="upload__filters">
             <div class="upload__filter-wrapper">
-              <button class="upload__filter  upload__filter--active"></button>
+              <button class="upload__filter  upload__filter--crop  upload__filter--active"></button>
               <div class="upload__range  upload__range--active">
                 <div class="upload__scale">
-                  <div class="upload__toggle"></div>
+                  <div class="upload__toggle  upload__toggle--crop"></div>
                 </div>
               </div>
             </div>
             <div class="upload__filter-wrapper">
-              <button class="upload__filter"></button>
+              <button class="upload__filter  upload__filter--fill"></button>
               <div class="upload__range">
                 <div class="upload__scale">
-                  <div class="upload__toggle"></div>
+                  <div class="upload__toggle  upload__toggle--fill"></div>
                 </div>
               </div>
             </div>
             <div class="upload__filter-wrapper">
-              <button class="upload__filter"></button>
+              <button class="upload__filter  upload__filter--contrast"></button>
               <div class="upload__range">
                 <div class="upload__scale">
-                  <div class="upload__toggle"></div>
+                  <div class="upload__toggle  upload__toggle--contrast"></div>
                 </div>
               </div>
             </div>
