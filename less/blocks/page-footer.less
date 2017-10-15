@@ -26,6 +26,14 @@
 
 .page-footer__copyright svg {
   margin-top: 8px;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 .page-footer--index-modal {
@@ -74,6 +82,26 @@
 
   .page-footer__logo {
     margin-right: 227px;
+
+    &:hover {
+      width: 147px;
+      height: 75px;
+      background-image: url("../img/logo-pink-white-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      img {
+        display: none;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      img {
+        display: block;
+      }
+    }
   }
 
   .page-footer__social {

@@ -5,11 +5,10 @@
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg") center top -6px;
-  height: 129px;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 29px;
+  margin-top: -170px;
 }
 
 .photo__inscription {
@@ -19,7 +18,7 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
-  padding: 58px 37px 12px 37px;
+  padding: 126px 37px 12px 37px;
 }
 
 .photo__panorama {
@@ -41,6 +40,11 @@
   background: #d22856;
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.photo__photo-of-day img {
+  width: 320px;
+  height: 137px;
 }
 
 .photo__post {
@@ -70,8 +74,15 @@
   background: #f2f2f2;
   padding-top: 19px;
   padding-bottom: 20px;
+}
+
+.photo__post-wrapper--panorama {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.photo__wrapper {
+  .container();
 }
 
 .photo__autor {
@@ -82,8 +93,20 @@
 }
 
 .photo__like {
+  position: relative;
   .links();
   padding-left: 49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .photo__like-link,
@@ -97,13 +120,20 @@
 
 .photo__photo-post {
   display: block;
-  padding-left: 20px;
+}
+
+.photo__post img {
+  width: 280px;
+  height: 180px;
 }
 
 @media @tablet-widths {
+  .photo {
+    margin-bottom: 19px;
+  }
+
   .photo__photo-of-day {
     display: block;
-    margin-bottom: 400px;
   }
 
   .photo__title {
@@ -112,12 +142,15 @@
     text-align: center;
     padding-top: 71px;
     margin-bottom: 163px;
+    margin-top: -330px;
   }
 
   .photo__inscription {
     font-size: 18px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 69px;
+    padding-bottom: 41px;
   }
 
   .photo__discription--panorama {
@@ -125,15 +158,26 @@
   }
 
   .photo__post-like--panorama {
-    padding-bottom: 65px;
+    padding-bottom: 49px;
     margin-left: 413px;
     margin-top: -81px;
+  }
+
+  .photo__photo-of-day img {
+    width: 700px;
+    height: 509px;
+    margin: 0 auto;
+  }
+
+  .photo__panorama-of-day {
+    top: 94px;
+    right: -500px;
   }
 
   .photo__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .photo__post {
@@ -141,13 +185,107 @@
 
     &--width {
       width: 100%;
+      margin-bottom: 49px;
     }
+  }
+
+  .photo__post img {
+    width: 300px;
+    height: 300px;
   }
 
   .photo__post-wrapper {
     padding-top: 24px;
     padding-bottom: 8px;
     padding-left: 10px;
-    margin-right: 20px;
+  }
+
+  .photo__discription--height {
+    min-height: 61px;
+    padding-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .photo__like {
+    padding-left: 18px;
+  }
+
+  .photo__post-like {
+    margin-bottom: 15px;
+  }
+
+  .photo__like-link-panorama {
+    padding-left: 31px;
+  }
+
+  .photo__like::before {
+    top: 6px;
+    left: 245px;
+  }
+
+  .photo__like--panorama::before {
+    top: 5px;
+    left: 155px;
+  }
+}
+
+@media @desktop-widths {
+  .photo {
+    margin-bottom: 5px;
+  }
+
+  .photo__title {
+    padding-left: 355px;
+    padding-right: 358px;
+    margin-top: -290px;
+  }
+
+  .photo__inscription {
+    padding: 30px 372px 41px 369px;
+    margin-bottom: 11px;
+  }
+
+  .photo__photo-of-day img {
+    width: 1200px;
+    height: 506px;
+    margin: 0 auto;
+  }
+
+  .photo__panorama-of-day {
+    top: 89px;
+    right: -1001px;
+  }
+
+  .photo__post-wrapper--panorama {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo__post--width {
+    .container();
+    margin-bottom: 49px;
+  }
+
+  .photo__discription--panorama {
+    padding-left: 16px;
+    padding-right: 42px;
+  }
+
+  .photo__post-like--panorama {
+    padding-bottom: 25px;
+  }
+
+  .photo__like--panorama {
+    margin-left: 316px;
+    margin-top: 33px;
+  }
+
+  .photo__post img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo__post:not(.photo__post--width) {
+    margin-bottom: 53px;
   }
 }
